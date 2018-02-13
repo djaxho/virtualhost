@@ -103,9 +103,9 @@ if [ "$action" == 'create' ]
 		fi
 
 		if [ "$owner" == "" ]; then
-			chown -R $(whoami):$(whoami) $rootDir
+			chown -R $(whoami):www-data $rootDir
 		else
-			chown -R $owner:$owner $rootDir
+			chown -R $owner:www-data $rootDir
 		fi
 
 		### enable website
